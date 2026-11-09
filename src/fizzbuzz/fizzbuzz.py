@@ -8,6 +8,10 @@ def fizzbuzz(n):
     salida = "".join(texto for cond, texto in reglas if cond)
     return salida or str(n)
 
+def fizzbuzz_sequence() -> list[str]:
+    """Devuelve la secuencia FizzBuzz del 1 al 100."""
+    return [fizzbuzz(n) for n in range(1, 101)]
+
 if __name__ == "__main__":
-    for number in range(1, 101):
-        print(fizzbuzz(number))
+    for number in fizzbuzz_sequence():
+        print(number)
