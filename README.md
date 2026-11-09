@@ -41,7 +41,7 @@ Desde la raíz del proyecto:
 pytest -v
 ```
 
-Resultado esperado: **53 tests en verde**.
+Resultado esperado: **63 tests en verde**.
 
 Si `pytest` no está instalado:
 
