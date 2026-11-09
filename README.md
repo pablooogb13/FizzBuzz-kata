@@ -1,6 +1,6 @@
-# FizzBuzz Kata — Stage 2
+# FizzBuzz Kata 
 
-Implementación del kata [FizzBuzz](https://codingdojo.org/kata/FizzBuzz/) (Stage 2) con TDD.
+Implementación del kata [FizzBuzz](https://codingdojo.org/kata/FizzBuzz/) con TDD.
 
 ## Reglas implementadas
 
