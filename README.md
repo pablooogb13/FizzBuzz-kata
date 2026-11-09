@@ -82,16 +82,12 @@ pip install pytest
   `15 → FizzBuzzBuzz`. Se documenta aquí porque el enunciado es ambiguo y se ha
   consultado al equipo.
 - **Sin validación de rango en `fizzbuzz(n)`**: la función es pura y acepta
-  cualquier entero ≥ 1. El rango 1–100 lo garantiza `fizzbuzz_sequence()` y el
-  bloque `__main__`. Se descarta lanzar excepciones como hace la solución de
-  Follesø porque complica el test sin aportar valor al kata.
+  cualquier entero ≥ 1. El rango 1–100 lo garantiza `fizzbuzz_sequence()`, y el
+  bloque `__main__` lo imprime.
 - **`fizzbuzz_sequence()` sin parámetros**: devuelve siempre la secuencia del 1
   al 100. Es lo que pide el kata y evita decisiones innecesarias sobre el orden
   de los parámetros. Si en el futuro se necesita otro rango, se pueden añadir
   parámetros opcionales sin romper las llamadas actuales.
-- **Type hints**: `fizzbuzz(n: int) -> str` y
-  `fizzbuzz_sequence() -> list[str]` documentan la interfaz y ayudan a
-  herramientas como `mypy` o al LSP del editor. No afectan al runtime.
 - **Sin imports relativos en `fizzbuzz.py`**: para que `python3 fizzbuzz.py`
   funcione desde su carpeta, el archivo no usa `from .algo import ...`. El
   `__init__.py` reexporta la función para los tests, pero no interfiere con la
