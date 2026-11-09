@@ -1,3 +1,3 @@
-from .core import fizzbuzz
+from .fizzbuzz import fizzbuzz
 
 __all__ = ["fizzbuzz"]
